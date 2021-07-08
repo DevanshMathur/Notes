@@ -1,0 +1,98 @@
+TO Learn
+	upstream 
+	downstream
+	alias
+	config cmd
+
+Git commands
+	
+	New User
+	-> git config --global user.username {Username}
+	-> git config --global user.email {Email}
+	-> git config --global -e 	// to edit global configuration settings in default editor 
+	->
+	->
+
+	<-> .gitignore file 	// contains name of the files that we have to ignore and didnt add to git repository
+	<->Types of users 		project overrides global and global overrides system.
+
+		1> project: Project configs are only available for the current project and stored in .git/config in the project's directory.
+			Create a project specific config, you have to execute this under the project's directory:
+			$ git config user.name "John Doe" 
+			
+		2> global: Global configs are available for all projects for the current user and stored in ~/.gitconfig.
+			Create a global config:
+			$ git config --global user.name "John Doe"
+		
+		3> system: System configs are available for all the users/projects and stored in /etc/gitconfig.
+			Create a system config:
+			$ git config --system user.name "John Doe" 
+remote
+	Repository related commands
+	-> git version	// to check version
+	-> git help config or git config --help	// for help, related to commands
+	-> git init		// For initializing git
+	-> git clone {repo link} 	// To clone repo on local machine
+	-> git status 	// For checking status
+	-> git remote add {remote repo} {Repositery link} // to link a repositery 
+	-> git add {filename/s} 	// The git add command adds a change in the wo rking directory to the staging area.
+	-> git add . (for all files)
+	-> git add *.{extension} 	// to add all the files having that extension
+	-> git reset 		// to remove added files
+	-> git commit -am "{Message}" 	// to commit in this you dont need to add the file -a stands for selecting all modified files
+	-> git commit --amend -m "{new commit message}" // to update prev commit
+	-> git commit -m "{Message}"	// to Commit
+	-> git push -f {remote repo} {branch name} or git push {remote repo} {branch name}	// to push the commited file
+	-> git push -u {remote repo} {branch name} // creating upstream branch if not present
+	-> git pull {remote repo} {branch name}
+	-> git checkout -b {branch name} 	// create a new branch (always work on sub branch)
+	-> git checkout {branchname} 	// switch branch
+	-> git config --global core.editor "sublime_text" 	// to add txt editor for git 
+	-> git rm {filename/s space seperated or *.extension} 	// to remove the files from staging area and working directory
+	-> git mv 	// to move or rename
+	-> git status -s 	// to check status in short
+	-> git diff --staged 	// find the changes that were made in commit
+	-> git log 	// to check the commit history
+	-> git log --oneline 	// for short commit history
+	-> git log --oneline --reverse	// for short commit history in reverse order
+	-> git show {id} 	// to show changes of that commit
+	-> git show HEAD~{steps} 	// to show changes of that commit that no of steps away from head
+	-> git show HEAD~{steps}:{filename or directory} 	// to see exact version of the file at that comit
+	-> git ls-tree HEAD~{step} 	// to see trees
+	-> git reset --hard 	// to unstage before making commit undo add command
+	-> git reset --soft 	// to unstage before making commit undo add command
+	-> git restore --staged {file/s or .} 	// to unstage before making commit undo add command after ver 2.280
+	-> git restore {file/s or .} 	// to restore local changes 
+	-> git clean 	// if we created new file and want to remove nd check help for more
+	-> git restore --source=HEAD~1 {filename} 	// to restore deleted file
+	-> git branch -a	// to check all branches
+	-> git log 	// tells you about commit history
+	-> git log --graph  	// graphical representation of the commit history
+	-> git log --oneline 	// log in one line+
+	-> git log -{number} 	// logs of last n number logs
+	-> git config --list 	// to view all settings
+	-> 
+	->
+	->
+	->
+	->
+	->
+
+unix commands
+
+	-> ctrl + c -to exit current command
+	-> mkdir {foldername} 	// for creating folder
+	-> clear 	// to clear screen	
+	-> ls 	// long listing
+	-> ls -a 	// to show all files (including hidden ones )
+	-> pwd 	// for checking current directory
+	-> rm {filename} 	// to remove specific file
+	-> rm -rf .git 	// to remove .git folder
+	-> echo {text} > {filename} 	// it will create new or rewrite the text in the file
+	-> echo {text} >> {filename} 	// to append in the file
+	-> mv {filename} {newname} 	// to move or rename file
+	-> mv {filename} {movinglocation} 	// to move to new location
+	
+	
+	-> git remote set-url {remote repo} https://git-repo/new-repository.git //Update repo link
+	-> git remote remove {remote repo} // Remove repo link

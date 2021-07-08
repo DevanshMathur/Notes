@@ -1,0 +1,4 @@
+mysql -u root -p	enter
+Tiger 	password	enter
+type semi colon after each command
+create database database_name

@@ -1,0 +1,24 @@
+General Commands
+	javac filename.java			to complie
+	java classname				to run
+	apletviewer filename.java 	for applet viewer
+Eclipse
+	Select Workspace -> Launch -> Create a new jaav project -> Enter Project Name -> Finish
+	On SRC -> Right Click -> New Class -> Package Name(optional) -> Class Name -> Class Type -> main class(optional) -> Finish
+
+	// -> Single Line Comment
+	/* -> MultiLine Comment
+	/** -> Documntation Comment
+	Ctrl+D -> Delete Current Line
+	Ctrl+/ -> Comment/Uncomment Selected Lines
+	Ctrl+f11 -> Run
+	Alt+Shift+R(Refactor) -> Rename Class, Variable, Methods
+	Ctrl+Shift+F(Code Formatting) -> Code Formating(Selected Code)
+	Alt+Shift+L -> To Replace Expression with a variable
+	Alt+Shift+M -> To move selected code in new methods
+	Ctrl+Shift+O -> To Manage imports 
+	Ctrl+Shift+T -> To Open class type
+	Ctrl+O -> Overview of the contents of the class
+	NaN stands for "Not a Number"
+	Ctrl+Left Click -> To Learn How Specific Method Work
+			

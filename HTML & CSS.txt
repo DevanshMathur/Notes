@@ -1,0 +1,225 @@
+->	<meta name="description" content="Page Description here" />
+
+->	<meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
+
+->	<meta name="viewport" content="width-device-width, initil-scale=1"/>
+
+->	<P> 													For Paragraph change									 	
+
+->	<BR>													For Line break											 	
+
+->	<H>			 											For Heading cam range from(1-5)					
+
+->	& lt													For Less Than sign							
+
+->	& gt													For Greater Than sign						
+
+->	<B>,<STRONG>											For Bold Text																
+
+->	<U>														For Underline Text											
+
+->	<I>,<em>												For Italic Text 
+
+->	<strike>												For Strike Text
+
+->	<font face="arial" color='blue' size='20'>				For Font Tag
+
+->	<UL>													For Unorder List	
+
+->	<LI>													For Adding List Items
+
+-> 	<hr> 													for line
+	
+->	<OL>													For Ordered List
+
+->	<img src="Image path" alt="Alternate text" >				For Image Insertion 
+		title="{txt}" 	// any txt that you want to display when mouse hover over it.
+
+->	<video width="100%" controls> 							For Video Tag
+		or
+		<video width="100%" autoplay>	->autoplay does not work in mobiles and tabs
+		<source src="path" type="video/mp4">
+		Your browser does not support the video tag
+	</video>
+
+->	<a href="" >pic or text </a>							For Link Insertion
+		target="_blank"										For opening link in new tab
+
+->	<a id="Varname"></a>									For linking page content with some text in the same page
+							use above with the statement and do not add anything between the opening and closing tags
+	<a herf="#Varname">Text</a>			this add the title with the content
+	a:link{
+		color:red;
+		text-decoration:none;
+		}
+	a:visited{
+		color:blue;
+		}
+	a:hover{
+		color:purple;
+		text-decoration:underline;
+		background-color:yellow;
+		}
+	a:active{
+		color:blue;
+		}
+->	<Table>
+		width="100%" or "32" or auto
+		border="2" or "0" 
+		bordercolor="blue"
+		bgcolor=""
+		celspacing="2"			space between cells  unit pixel
+		cellpadding="3"			space between cell and content
+->	<TR>		Table row
+->	<TD>		Table column
+		colspan="2" attribute		Merge two column
+		nowrap="nowrap" attribute			this will bring the entire text in one row
+->	background="" attribute			Set backround
+->	VAlign="top"
+->	Align="right" attribure			To set alignment
+		 ="center"
+		 ="left"
+		 ="justify"
+
+->	<TH>		Table Heading nested inside tr tag or replace td tag
+	table{
+		table-collapse:collapse;
+		width:10px;
+		}
+	tr:hover{
+		background-color:cyan;
+		}
+
+->	<Form name=""  method="post">							For form creation
+		action="send.php" 		what will happen after submission 
+		method =""  ge or post	 get display the content of the form bt post didnt
+		target 	="" 	same page or open new page
+
+	input type
+		"file" upload file
+		"color" open color picker
+		"date" open date picker
+		"datetime-local" open date and time picker
+		"time" open time picker
+		"week"
+		"month"
+		"email"
+		"number"
+			"range"
+			min
+			max
+
+		name attribute is requ to send data of the form
+->	<input type="text" name="variable"	 />						For taking input
+		size = ""  size of box
+		patters 		chec o web for pattern matching formating of the input that user can enter work only text input
+		maxlength=""  maximum length of the text
+		minlength=""  minimum length of the text
+		readonly	data is processed
+		disabled 	data is not processed
+		required 		need some value cannot be null 
+		placeholder = "{message}" message that you want to show in the box	value attribute should be remover 	
+	<input list="{var1}"/> 		help in search in the dropdown menu (when we type first letter and words having that letter showed up)
+		<datalist id="{var1}">
+			<option value="v1">opt1</option>
+			<option value="v2">opt2</option>
+		</datalist>
+	<input type="checkbox" name="variable"/>text	
+		checked is also a SelfCntaiinedValue attribute used to default select check box
+	<input type="radio" name="variable" value="the value submitted to php page">Text 	name of radio button should be same so only one     																					option can be selected
+		checked is also a SelfCntaiinedValue attribute used to default select radio button
+
+	<input type="submit" name="submit" value="name of button">
+	<input type="reset" name="reset" value="Reset">
+
+->	<select name="variable">		For drop down menu
+		<option values="any two character"> opt 1</option>		
+	<select name="variable" multiple> 	// for selecting multiple values from dropdown work after holding control key
+		where multiple attribute is known as SelfContainedValue attriute
+		selected is also a SelfCntaiinedValue attribute used to default select option
+
+->	<textarea name="" cols(width)="" height="no of rows"></textarea>
+
+-> 	<iframes src="" width="" height="">statement in case not suported</iframes>
+
+
+								CSS Cascading Style Sheet
+								
+->	precedency order =>> inline css >> id css >> class
+	style tag is reqd for inline
+	<div style="text-align: left;">
+->	<link rel="sylesheet" href="filename with extensoin">	For linking css file use this inside head
+
+->	<style type="text/css">
+		color:red;
+		color:#33adff;										Light blue color
+		color:rgb(255,0,255);								Can pic color with the help of(colorpicker.com)
+	Body{ Style you want to add}							This is applied to the entire body tag
+	h1,h2{ Style you want to add}							This is applied to the h1 and h2 body
+	img{	opacity:0.4;									opacity of image
+			float: right;
+			margin :0 0 10px 10px;	(top right bottom left)
+	 }										
+	img:hover{ opacity:1.0; }								image opacity will change when mouse comes over it
+	li:last-child{ border-right:none; }						Rules for last child
+	li a{rules}												for all elements of list
+	li a:hover:not(.active){rules}							for non active list items
+	.active{rules}										
+
+
+->	.classname{												begin with (.) Class that can be applied to the content
+	color:blue;												we can add class by using it inside some tag like class="classname"
+	font-size:small;										<tr class="classname">text</tr>   or
+	font-width:bold;										<span class="class1name class2name">text</span>	
+	font-family:verdanaa, sans-serif;  font priorty 1 verdanaa 2 sans-serif
+	font-style:oblique or italic or normal;
+	line-hight:200%;			normal is 110%-120%
+	letter-spacing:10px;
+	word-spacing:10px;
+	text-decoration: uderline or overline or line-through;
+	text-align:right or left or center or justify;
+	text-transform:uppercase or lowercase or capitalize; 
+	border:4px;		(all sides)
+	border-left:4px;
+	border-top:4px;
+	border-bottom:4px;
+	border-right:4px;
+	border-color:#3333333;
+	border-style:dashed or dotted or double or groove or hidden or inset or none or outset or ridge or solid;
+	}
+
+->  <div style="text-align: left;">	// left, right, center, justify
+
+->	<div id="div1">text</div>	
+
+->	#div1 or anyname start with #{													Ids begin with #
+	width:100% or auto ;					this take the width of the window automatically
+	min-width:600px;						this will take the size of window bt remain greater than 600 px
+	max-width:800px;						this will take the size of window bt remain less than 800 px
+	height:500px;
+	height:100% this will not work so we have to use height:100vh;
+	border:3px solid black;
+	background-color:yellow;
+	background-image:url(name of image with extension);
+	background-repeat:repeat-x; or background-repeat:repeat-y; or background-repeat:no-repeat;
+	background-position:{(top,center,bottom) (left,center,right)} or{x-% y-%} or{x-pos y-pos}; 
+	color:black;			font color
+	margin:10px; or margin:0px 0px 30px 30px;(top right bottom left) 
+	padding:30px 0px 0px 20px;(top right bottom left )
+	display: inline-block; 			for keeping multiple div in same line then add this to each div
+	display:none ;		for hiding the div or invisible the div
+	positioning
+		->default is static position{position :static;}
+		->relative positioning {position :relative;}
+			top:30px
+;			left:30px;
+			nested div {position :relative;}
+				top:30px;
+				left:50px;
+		->absolute psitioning {position :absolute;} have a fix posn only move with scroling
+		->fixed positioning {Position:fixed;}	dosent move with scroll always remain on the page
+	clear: left 					to seperate from other div lect 62
+	z-index:intege values 						the div having greater z-index will be on top of other div
+	}
+
+->	@media(max-width:840px){rules}				these rules will override when width goes less than 840px
